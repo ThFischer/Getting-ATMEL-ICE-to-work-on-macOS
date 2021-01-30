@@ -2,6 +2,11 @@
 
 MacOS may grab the Atmel-ICE USB device and prevent access.
 Folllow these instructions ([found here](https://www.avrfreaks.net/comment/2394561#comment-2394561)): 
+
+Preparation:
+Download the `AtmelICE.kext.zip` and unzip it.
+Open a Terminal and change directory (`cd`) to the folder where you unzipped it
+
 1. `sudo chown -R root:wheel AtmelICE.kext`
 2. `sudo mv AtmelICE.kext /Library/Extensions/AtmelICE.kext`
 3. `sudo kextload /Library/Extensions/AtmelICE.kext`
